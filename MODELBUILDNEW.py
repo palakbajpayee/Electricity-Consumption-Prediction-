@@ -19,7 +19,7 @@ from sklearn.preprocessing import FunctionTransformer
 from sklearn.impute import SimpleImputer
 
 # Load the data
-data = pd.read_csv('/Users/palakbajpayee/Downloads/Electric_Production (1).csv')  # Replace with your actual file path
+data = pd.read_csv('./Electric_Production (1).csv')  # Replace with your actual file path
 
 # Convert DATE to DATEtime format
 data['DATE'] = pd.to_datetime(data['DATE'])

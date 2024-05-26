@@ -19,9 +19,9 @@ from sqlalchemy import create_engine
 from feature_engine.outliers import Winsorizer 
 from scipy.stats import skew, kurtosis 
 
-data = pd.read_csv(r"/Users/palakbajpayee/Downloads/Electric_Production (1).csv")
+data = pd.read_csv(r"./Electric_Production (1).csv")
 user = 'postgres'  # user name
-pw = 'Palak@2412'  # password
+pw = ''  # password
 db = 'dataset'  # database name
 engine = create_engine(f"postgresql+psycopg2://{user}:%s@localhost/{db}" % quote(f'{pw}'))
 

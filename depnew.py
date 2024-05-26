@@ -18,7 +18,7 @@ from datetime import datetime
 
 # Load the data and train the model
 def load_data():
-    data = pd.read_csv('/Users/palakbajpayee/Downloads/Electric_Production (1).csv')  # Replace with your actual file path
+    data = pd.read_csv('./Electric_Production (1).csv')  # Replace with your actual file path
     data['DATE'] = pd.to_datetime(data['DATE'])
     data['year'] = data['DATE'].dt.year
     data['month'] = data['DATE'].dt.month
